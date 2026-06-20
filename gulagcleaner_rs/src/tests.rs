@@ -82,6 +82,14 @@ fn run_test_for_config(test_config: &TestConfig) {
 // Define tests for specific PDF files, utilizing the TestConfig structure.
 
 #[test]
+fn test_10025495_wuolah_pdf() {
+    run_test_for_config(&TestConfig {
+        input_path: "example_docs/wuolah-10025495-example.pdf",
+        output_filename: "wuolah_10025495_clean.pdf",
+    });
+}
+
+#[test]
 fn test_wuolah_pdf() {
     run_test_for_config(&TestConfig {
         input_path: "example_docs/wuolah-free-example.pdf",
